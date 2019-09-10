@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<div id="weather-box-input">
+    <div class="position-relative overflow-hidden m-md-3 text-center">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <div class="forecast-icon">
+                <img src="Img/cloudy.svg" id="Profile" alt="" width="140">
+            </div>
+            <h3 class=" font-weight-small">Weather Api</h3>
+                <div class="col-auto">
+                    <label class="sr-only" for="Cityin">Name</label>
+                    <input type="text" class="form-control mb-2" id="Cityin" placeholder="City Name">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-primary mb-2" id="search">Search</button>
+                </div>
+            <div id="weather">
+                <img src="Img/cloudy.svg" id="mainPic" width="80" ><br>
+                <span id="temperaturedispInfo">---</span><br>
+                <span id="temperaturedisp">°</span><br>
+                <span id="temperaturedispMin">°</span>
+                <span id="temperaturedispMax">°</span>
+            </div>
+
+
+        </div>
+        </div>
+
+
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+
+
+
+
+
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script  src="weather.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+<!--
+<h3 class=" font-weight-small">Weather Api</h3>
+<div class="form-group col-md-5 mx-auto">
+    <input type="text" class="form-control" id="City" placeholder="City Name">
+    <div class="col-auto">
+        <button type="submit" class="btn btn-outline-primary mb-2">Search</button>
+    </div>
+</div>-->
