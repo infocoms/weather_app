@@ -247,7 +247,7 @@ document.getElementById("search").addEventListener("click", function () {
             day_4_tmp_max_b = sum / many;
             day_4_tmp_max = averageTmp(day_4_tmp_max_b, 2);
 
-            sum = 0;
+
             for (i = 0; i < D5.length; i++) {
                 sum += parseFloat(get[0].list[D5[i]].main.temp_max);
             }
@@ -259,29 +259,29 @@ document.getElementById("search").addEventListener("click", function () {
 
 
 
-            currentTempIn = document.getElementById("temperaturedisp").innerHTML =  day_1_tmp;
-            currentTempMin = document.getElementById("temperaturedispMin").innerHTML = "Min "+day_1_tmp_min;
-            currentTempMax = document.getElementById("temperaturedispMax").innerHTML = "Max "+day_1_tmp_max;
+            currentTempIn = document.getElementById("temperaturedisp").innerHTML =  day_1_tmp + deg;
+            currentTempMin = document.getElementById("temperaturedispMin").innerHTML = "Min "+day_1_tmp_min + deg;
+            currentTempMax = document.getElementById("temperaturedispMax").innerHTML = "Max "+day_1_tmp_max + deg;
             info.innerHTML = response.data.list[i].weather[0].description;
 
             currentTempIn2 = document.getElementById("temperaturedisp2").innerHTML =  day_2_tmp;
-            currentTempMin2 = document.getElementById("temperaturedispMin2").innerHTML = "Min "+day_2_tmp_min;
-            currentTempMax2 = document.getElementById("temperaturedispMax2").innerHTML = "Max "+day_2_tmp_max;
+            currentTempMin2 = document.getElementById("temperaturedispMin2").innerHTML = "Min "+day_2_tmp_min + deg;
+            currentTempMax2 = document.getElementById("temperaturedispMax2").innerHTML = "Max "+day_2_tmp_max + deg;
             info.innerHTML = response.data.list[i].weather[0].description;
 
-            currentTempIn3 = document.getElementById("temperaturedisp3").innerHTML =  day_3_tmp;
-            currentTempMin3 = document.getElementById("temperaturedispMin3").innerHTML = "Min "+ day_3_tmp_min;
-            currentTempMax3 = document.getElementById("temperaturedispMax3").innerHTML = "Max "+day_3_tmp_max;
+            currentTempIn3 = document.getElementById("temperaturedisp3").innerHTML =  day_3_tmp + deg;
+            currentTempMin3 = document.getElementById("temperaturedispMin3").innerHTML = "Min "+ day_3_tmp_min + deg;
+            currentTempMax3 = document.getElementById("temperaturedispMax3").innerHTML = "Max "+day_3_tmp_max + deg;
             info.innerHTML = response.data.list[i].weather[0].description;
 
-            currentTempIn4 = document.getElementById("temperaturedisp4").innerHTML =  day_4_tmp;
-            currentTempMin4 = document.getElementById("temperaturedispMin4").innerHTML = "Min "+ day_4_tmp_min;
-            currentTempMax4 = document.getElementById("temperaturedispMax4").innerHTML = "Max "+day_4_tmp_max;
+            currentTempIn4 = document.getElementById("temperaturedisp4").innerHTML =  day_4_tmp + deg;
+            currentTempMin4 = document.getElementById("temperaturedispMin4").innerHTML = "Min "+ day_4_tmp_min + deg;
+            currentTempMax4 = document.getElementById("temperaturedispMax4").innerHTML = "Max "+day_4_tmp_max + deg;
             info.innerHTML = response.data.list[i].weather[0].description;
 
-            currentTempIn5 = document.getElementById("temperaturedisp5").innerHTML =  day_5_tmp;
-            currentTempMin5 = document.getElementById("temperaturedispMin5").innerHTML = "Min "+ day_5_tmp_min;
-            currentTempMax5 = document.getElementById("temperaturedispMax5").innerHTML = "Max "+day_5_tmp_max;
+            currentTempIn5 = document.getElementById("temperaturedisp5").innerHTML =  day_5_tmp + deg;
+            currentTempMin5 = document.getElementById("temperaturedispMin5").innerHTML = "Min "+ day_5_tmp_min + deg;
+            currentTempMax5 = document.getElementById("temperaturedispMax5").innerHTML = "Max "+day_5_tmp_max + deg;
             info.innerHTML = response.data.list[i].weather[0].description;
 
 
